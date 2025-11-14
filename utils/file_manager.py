@@ -7,6 +7,7 @@ def import_previous_data():
     if not os.path.exists(file_name):
         data = {
             "accounts": [],
+            "categories": [],
             "transactions": []
         }
         return data
@@ -17,6 +18,7 @@ def import_previous_data():
         print("File is Empty..\n")
         data = {
             "accounts": [],
+            "categories": [],
             "transactions": []
         }
         return data
@@ -25,8 +27,8 @@ def import_previous_data():
 def save_data_to_file(data):
     try:
         with open(file_name, 'w', encoding= "utf-8") as f:
-            json.dump(data, f)
+            json.dump(data, f, indent= 4)
     
     except:
         with open(file_name, 'a', encoding= "utf-8") as f:
-            json.dump(data, f)
+            json.dump(data, f, indent= 4)

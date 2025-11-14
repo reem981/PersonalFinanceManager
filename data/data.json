@@ -1,1 +1,51 @@
-{"accounts": [{"name": "reem", "balance": 1000000.0}, {"name": "test", "balance": 200.0}], "transactions": []}
+{
+    "accounts": [
+        {
+            "name": "reem",
+            "balance": 1000.0
+        }
+    ],
+    "categories": [],
+    "transactions": [
+        {
+            "type": "income",
+            "category": null,
+            "account name": "reem",
+            "amount": 100.0,
+            "note": "1",
+            "date": "2025-11-14"
+        },
+        {
+            "type": "income",
+            "category": "Petty Cash",
+            "account name": "reem",
+            "amount": 99.0,
+            "note": "00",
+            "date": "2025-11-14"
+        },
+        {
+            "type": "income",
+            "category": "Petty Cash",
+            "account name": "reem",
+            "amount": 33.0,
+            "note": "3",
+            "date": "2025-11-14"
+        },
+        {
+            "type": "income",
+            "category": "Petty Cash",
+            "account name": "reem",
+            "amount": 33.0,
+            "note": "3",
+            "date": "2025-11-14"
+        },
+        {
+            "type": "expense",
+            "category": "transport",
+            "account name": "reem",
+            "amount": 33.0,
+            "note": "3",
+            "date": "2025-11-14"
+        }
+    ]
+}
