@@ -27,6 +27,8 @@ def main():
     print ("\n** Personal Finance Manager **")
     data = import_previous_data()
     
+    username = input ("Enter Account Name: ")
+
     while True:
         print("*"*9)
         print("1. Create New Account")
@@ -41,7 +43,7 @@ def main():
 
         if user_input == "1":
             exists = False
-            username = input ("Enter Account Name: ")
+            # username = input ("Enter Account Name: ")
             for acc in data["accounts"]:
                 if (acc["name"]) == username:
                     print("This Account Already Exists.")
@@ -60,7 +62,7 @@ def main():
 
             
             while exists == False:
-                username = input("Enter Account Name: ")
+                # username = input("Enter Account Name: ")
                 for acc in data["accounts"]:
                     if acc["name"] == username:
                         balance = acc["balance"]
@@ -91,7 +93,7 @@ def main():
             amount = float(input("Enter Amount to withdraw: "))
 
             while exists == False:
-                username = input("Enter Account Name: ")
+                # username = input("Enter Account Name: ")
                 for acc in data["accounts"]:
                     if acc["name"] == username:
                         if amount < acc["balance"]:
@@ -121,7 +123,7 @@ def main():
         elif user_input == "4":
             exists = False
             while exists == False:
-                username = input("\nEnter Your Account Name: ")
+                # username = input("\nEnter Your Account Name: ")
 
                 for acc in data["accounts"]:
                     if acc["name"] == username:
