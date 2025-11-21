@@ -2,7 +2,11 @@
     "accounts": [
         {
             "name": "reem",
-            "balance": 1000.0
+            "balance": 1100.0
+        },
+        {
+            "name": "rest",
+            "balance": 50.0
         }
     ],
     "categories": [],
@@ -46,6 +50,38 @@
             "amount": 33.0,
             "note": "3",
             "date": "2025-11-14"
+        },
+        {
+            "type": "income",
+            "category": "Salary",
+            "account name": "reem",
+            "amount": 100.0,
+            "note": "october salary",
+            "date": "2025-11-21"
+        },
+        {
+            "type": "expense",
+            "category": "beauty",
+            "account name": "reem",
+            "amount": 10.0,
+            "note": "mascara",
+            "date": "2025-11-21"
+        },
+        {
+            "type": "expense",
+            "category": "health",
+            "account name": "rest",
+            "amount": 150.0,
+            "note": "medicine",
+            "date": "2025-11-21"
+        },
+        {
+            "type": "income",
+            "category": "Allowance",
+            "account name": "reem",
+            "amount": 10.0,
+            "note": "gift",
+            "date": "2025-11-21"
         }
     ]
 }

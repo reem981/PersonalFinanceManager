@@ -136,7 +136,7 @@ def main():
 
         elif user_input == "5":
             month = input ("Enter A Date YYYY-mm Like (2025-11): ")
-            monthly_report(data, month)
+            monthly_report(data, month, username)
 
         elif user_input == "6":
             print("Good Bye!")

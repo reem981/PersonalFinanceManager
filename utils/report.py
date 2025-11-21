@@ -1,14 +1,14 @@
 from datetime import datetime
 
-def monthly_report(data, month):
+def monthly_report(data, month, username):
     transactions = data.get("transactions", [])
-    data_of_the_month = [trans for trans in transactions if trans["date"].startswith(month)]
+    data_of_the_month = [trans for trans in transactions if trans["date"].startswith(month) and trans["account name"] == username]
 
-    income = sum(trans["amount"] for trans in data_of_the_month if trans["type"] == "income")
+    income = sum(trans["amount"] for trans in data_of_the_month if trans["type"] == "income" and trans["account name"] == username)
 
-    expense = sum(trans["amount"] for trans in data_of_the_month if trans["type"] == "expense")
+    expense = sum(trans["amount"] for trans in data_of_the_month if trans["type"] == "expense" and trans["account name"] == username)
 
-    print(f"\n The Report Of {month}")
+    print(f"\n The Report Of {month} for {username}")
     print(f"Income: {income:.2f}")
     print(f"Expenses: {expense:.2f}")
     print(f"Total: {income - expense:.2f}")

@@ -3,7 +3,7 @@ class Transaction:
     def __init__(self, t_type, category, name, amount, note):
         self.t_type = t_type    #determine if it is #income or #expose transaction
         self.category = category   #determine the category name
-        self.name = name
+        self.name = name            #determin the owner of the account
         self.amount = amount
         self.note = note
         self.date = datetime.now().strftime("%Y-%m-%d")
