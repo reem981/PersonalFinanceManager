@@ -1,33 +1,43 @@
-class account:
-    name = ""
-    balance = 0
+class Account:
 
-    def __init__(self,name, balance):
-        if balance < 0:
+    def __init__(self,name, password, balance = 0):
+        if balance < 0:     # check if balance negative
             raise ValueError("Balance Can't Be Negative..\n")
-        self.name = name
-        self.balance =balance
+        self._name = name
+        self._password =password
+        self._balance = balance
 
-    def add_balance(self, amount):
-        if amount < 0:
-            print("The Amount Can't Be Negative..")
-        else:
-            self.balance += amount
-    
+    @property  # name getter
+    def name(self):
+        return self._name
+
+    @property  # balance getter
+    def balance(self):
+        return self._balance
+       
+
+    def add_balance(self, amount):      # check if the amount is positive before adding
+        if amount <= 0:
+            raise ValueError("The amount must be positive to add.")
+        
+        self._balance += amount
+
 
     def reduce_balance(self, amount):
-        if amount < self.balance:
-            self.balance -= amount
-        else:
-            print("No Such Balance in Your Account. ❌")
- 
+        if amount <= 0:
+            raise ValueError("The amount must be positive to withdraw.")
+        if amount > self._balance:
+            raise ValueError("No sufficient balance in your account.")
+        self._balance -= amount
+
 
     def __str__(self):
-        print(f"Name: {self.name}, Your Account: {self.balance:.2f}")
+        return f"Name: {self.name}, Your Account: {self.balance:.2f}"
         
     def to_dict(self):
         data= {
-            "name": self.name,
-            "balance": self.balance
+            "name": self._name,
+            "password": self._password,
+            "balance": self._balance
         }
         return data

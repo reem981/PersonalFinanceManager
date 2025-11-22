@@ -2,86 +2,43 @@
     "accounts": [
         {
             "name": "reem",
-            "balance": 1100.0
-        },
-        {
-            "name": "rest",
-            "balance": 50.0
+            "password": "Reem.123",
+            "balance": 1270.0
         }
     ],
     "categories": [],
     "transactions": [
         {
             "type": "income",
-            "category": null,
-            "account name": "reem",
-            "amount": 100.0,
-            "note": "1",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Petty Cash",
-            "account name": "reem",
-            "amount": 99.0,
-            "note": "00",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Petty Cash",
-            "account name": "reem",
-            "amount": 33.0,
-            "note": "3",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Petty Cash",
-            "account name": "reem",
-            "amount": 33.0,
-            "note": "3",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "expense",
-            "category": "transport",
-            "account name": "reem",
-            "amount": 33.0,
-            "note": "3",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
             "category": "Salary",
-            "account name": "reem",
-            "amount": 100.0,
-            "note": "october salary",
-            "date": "2025-11-21"
-        },
-        {
-            "type": "expense",
-            "category": "beauty",
-            "account name": "reem",
-            "amount": 10.0,
-            "note": "mascara",
-            "date": "2025-11-21"
-        },
-        {
-            "type": "expense",
-            "category": "health",
-            "account name": "rest",
-            "amount": 150.0,
-            "note": "medicine",
-            "date": "2025-11-21"
+            "account owner": "reem",
+            "amount": 1000.0,
+            "note": "November Salary",
+            "date": "2025-11-22"
         },
         {
             "type": "income",
             "category": "Allowance",
-            "account name": "reem",
+            "account owner": "reem",
+            "amount": 300.0,
+            "note": "gift for work",
+            "date": "2025-11-22"
+        },
+        {
+            "type": "income",
+            "category": "Bonus",
+            "account owner": "reem",
             "amount": 10.0,
-            "note": "gift",
-            "date": "2025-11-21"
+            "note": "1",
+            "date": "2025-11-22"
+        },
+        {
+            "type": "expense",
+            "category": "transport",
+            "account owner": "reem",
+            "amount": 40.0,
+            "note": "Italy",
+            "date": "2025-11-22"
         }
     ]
 }

@@ -15,7 +15,7 @@ def import_previous_data():
         with open(file_name, 'r', encoding = "utf-8") as f:
             return json.load(f)
     except:
-        print("File is Empty..\n")
+        print("File is Empty or Corrupted..\n")
         data = {
             "accounts": [],
             "categories": [],
