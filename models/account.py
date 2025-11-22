@@ -2,11 +2,12 @@ class account:
     name = ""
     balance = 0
 
-    def __init__(self,name, balance):
-        if balance < 0:
-            raise ValueError("Balance Can't Be Negative..\n")
+    def __init__(self,name, password, balance):
+        # if balance < 0:
+        #     raise ValueError("Balance Can't Be Negative..\n")
         self.name = name
-        self.balance =balance
+        self.password =password
+        self.balance = balance
 
     def add_balance(self, amount):
         if amount < 0:
@@ -28,6 +29,7 @@ class account:
     def to_dict(self):
         data= {
             "name": self.name,
+            "password": self.password,
             "balance": self.balance
         }
         return data

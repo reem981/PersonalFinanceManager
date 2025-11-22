@@ -2,77 +2,33 @@
     "accounts": [
         {
             "name": "reem",
-            "balance": 1100.0
+            "password": "Reem@123",
+            "balance": 60.0
         },
         {
-            "name": "rest",
-            "balance": 50.0
+            "name": "test",
+            "password": "123",
+            "balance": 0
+        },
+        {
+            "name": "lkjh",
+            "password": "Asdf1243",
+            "balance": 0
+        },
+        {
+            "name": "sdfghj",
+            "password": "Zxc.12",
+            "balance": 0
         }
     ],
     "categories": [],
     "transactions": [
         {
             "type": "income",
-            "category": null,
+            "category": "Bonus",
             "account name": "reem",
             "amount": 100.0,
-            "note": "1",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Petty Cash",
-            "account name": "reem",
-            "amount": 99.0,
-            "note": "00",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Petty Cash",
-            "account name": "reem",
-            "amount": 33.0,
-            "note": "3",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Petty Cash",
-            "account name": "reem",
-            "amount": 33.0,
-            "note": "3",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "expense",
-            "category": "transport",
-            "account name": "reem",
-            "amount": 33.0,
-            "note": "3",
-            "date": "2025-11-14"
-        },
-        {
-            "type": "income",
-            "category": "Salary",
-            "account name": "reem",
-            "amount": 100.0,
-            "note": "october salary",
-            "date": "2025-11-21"
-        },
-        {
-            "type": "expense",
-            "category": "beauty",
-            "account name": "reem",
-            "amount": 10.0,
-            "note": "mascara",
-            "date": "2025-11-21"
-        },
-        {
-            "type": "expense",
-            "category": "health",
-            "account name": "rest",
-            "amount": 150.0,
-            "note": "medicine",
+            "note": "Additional Work",
             "date": "2025-11-21"
         },
         {
@@ -81,6 +37,22 @@
             "account name": "reem",
             "amount": 10.0,
             "note": "gift",
+            "date": "2025-11-21"
+        },
+        {
+            "type": "expense",
+            "category": "food",
+            "account name": "reem",
+            "amount": 30.0,
+            "note": "crispy",
+            "date": "2025-11-21"
+        },
+        {
+            "type": "expense",
+            "category": "transport",
+            "account name": "reem",
+            "amount": 20.0,
+            "note": "tour",
             "date": "2025-11-21"
         }
     ]
