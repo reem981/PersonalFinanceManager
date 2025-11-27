@@ -1,5 +1,13 @@
 from datetime import datetime
 
+# Print a monthly report for a specific user.
+# The report shows:
+#     - total income
+#     - total expenses
+#     - net balance (income - expenses)
+#     - income grouped by category
+#     - expenses grouped by category
+
 def monthly_report(data, month, username):
     transactions = data.get("transactions", [])
     data_of_the_month = [trans for trans in transactions if trans["date"].startswith(month) and trans["account owner"] == username]

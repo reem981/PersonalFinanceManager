@@ -1,3 +1,13 @@
+"""
+Evaluate the strength of a password.
+
+The password is checked for the presence of at least 3 of the following:
+- lowercase letters
+- uppercase letters
+- digits
+- symbols
+
+"""
 def password_strength(password):
    small_chars = "abcdefghijklmnopqrstuvwxyz"
    capital_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -37,7 +47,7 @@ def password_strength(password):
    elif strength == 4:
       return "Ulta Strong", 100
 
-
+# ask the user to create a valid password or cancel the process with '*'
 def create_password():
     while True:
         password = input("\nEnter Your Password (Enter * to Exit This Process): ")

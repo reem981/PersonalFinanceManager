@@ -3,6 +3,7 @@ import os
 
 file_name = "data/data.json"
 
+# Load existing data from the JSON file if it exists
 def import_previous_data():
     if not os.path.exists(file_name):
         data = {
@@ -23,7 +24,7 @@ def import_previous_data():
         }
         return data
         
-
+# Save all accounts, categories, and transactions to the JSON file
 def save_data_to_file(data):
     try:
         with open(file_name, 'w', encoding= "utf-8") as f:
