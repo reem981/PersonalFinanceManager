@@ -169,7 +169,7 @@ def show_list(username, password):
             print("New Expense Done Successfully")
 
 
-        elif user_input == "2":
+        elif user_input == "3":
             exists = False
             while exists == False:
                 for acc in data["accounts"]:

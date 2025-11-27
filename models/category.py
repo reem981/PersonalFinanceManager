@@ -3,7 +3,7 @@ class Category:
     Expense_Categories = ["transport", "food", "appliances", "health", "beauty", "apparel", "other"]
     def __init__(self, t_type, c_type):
         if t_type == "expense":
-            if c_type not in self.Category_names:
+            if c_type not in self.Expense_Categories:
                 raise ValueError(f"Category Type Should Be One Of These Types: {','.join(self.Expense_Categories)}")
             
             self.name = t_type
