@@ -15,7 +15,7 @@ from models.transaction import Transaction
 from models.category import Category
 from utils.file_manager import import_previous_data, save_data_to_file
 from utils.report import monthly_report
-from models.password import create_password
+from utils.password import create_password
 
 # Display available categories (based on transaction type) and let the user choose one
 def choose_category(data, c_type):

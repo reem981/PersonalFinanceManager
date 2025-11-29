@@ -1,9 +1,9 @@
 {
     "accounts": [
         {
-            "name": "reem",
-            "password": "Reem.123",
-            "balance": 1270.0
+            "name": "Owner",
+            "password": "Qwer5678",
+            "balance": 1400.0
         }
     ],
     "categories": [],
@@ -11,34 +11,34 @@
         {
             "type": "income",
             "category": "Salary",
-            "account owner": "reem",
-            "amount": 1000.0,
+            "account owner": "Owner",
+            "amount": 2000.0,
             "note": "November Salary",
-            "date": "2025-11-22"
-        },
-        {
-            "type": "income",
-            "category": "Allowance",
-            "account owner": "reem",
-            "amount": 300.0,
-            "note": "gift for work",
-            "date": "2025-11-22"
+            "date": "2025-11-29"
         },
         {
             "type": "income",
             "category": "Bonus",
-            "account owner": "reem",
-            "amount": 10.0,
-            "note": "1",
-            "date": "2025-11-22"
+            "account owner": "Owner",
+            "amount": 500.0,
+            "note": "",
+            "date": "2025-11-29"
         },
         {
             "type": "expense",
-            "category": "transport",
-            "account owner": "reem",
-            "amount": 40.0,
-            "note": "Italy",
-            "date": "2025-11-22"
+            "category": "food",
+            "account owner": "Owner",
+            "amount": 650.0,
+            "note": "",
+            "date": "2025-11-29"
+        },
+        {
+            "type": "expense",
+            "category": "food",
+            "account owner": "Owner",
+            "amount": 450.0,
+            "note": "",
+            "date": "2025-11-29"
         }
     ]
 }
