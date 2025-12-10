@@ -51,6 +51,7 @@ def main():
 
         choice = input ("Choose a Number From The List: ")
         if choice == '1':
+            exists = False
             # validate the account name and password, then call `show_list` for that user
             username = input ("Enter Account Name: ")
             if not data["accounts"]:
@@ -58,6 +59,7 @@ def main():
                 continue
             for acc in data["accounts"]:
                     if (acc["name"]) == username:
+                        exists = True
                         # validate Password
                         password = input("Enter Your Password: ")
                         while (acc["password"] != password):
@@ -67,9 +69,9 @@ def main():
                         print("\n** Welcome Back **")
                         show_list(username, password)
                         break
-                    else:
-                        print(f"There Is No Account Named As {username}!")
-                        break
+            if exists == False:
+                print(f"There Is No Account Named As {username}!")
+                break
 
         elif choice == '2':
             # a unique account name and a strong password are required before the account is saved
